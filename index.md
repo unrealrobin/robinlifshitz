@@ -33,7 +33,7 @@ Systems
 3. Trap Synergy System.
 4. And much much more...
 
-## [Project Hail Mary](./Portfolio/AbilityTelegrpahEditor.md) <- click for more
+## [Project Hail Mary](./Portfolio/AbilityTelegraphEditor.md) <- click for more
 
 ![Gameplay Screenshot](./Portfolio\Images\PHM_RATE.jpg)
 
