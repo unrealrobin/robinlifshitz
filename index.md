@@ -1,74 +1,48 @@
-﻿# Die Robot – Game Systems Portfolio
+# Robin Lifshitz | Game Development Portfolio
 
-**Die Robot** is a 3rd-person tower-defense/action game I built solo in **Unreal Engine 5.4 (C++)**.  
-Players defend a lab from waves of robots by building traps, chaining trap combos, and fighting directly with weapons and weapon abilities..
+### Info
 
-This portfolio highlights the **three core gameplay systems** I’m most proud of.
+- **Email:** robin@paracosm.gg
+- **LinkedIn:** [https://www.linkedin.com/in/robinlifshitz/](https://www.linkedin.com/in/robinlifshitz/)
+- **Location:** Los Angeles, Ca
 
-<div class="video-wrap">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/X6uwQZvJpAY?si=ATIWx7T0j73x_zbJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+### Summary
 
-<style>
-.video-wrap{position:relative;max-width:960px;margin:1.5rem auto;}
-.video-wrap:before{content:"";display:block;padding-top:56.25%;} /* 16:9 */
-.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
-</style>
+A few years ago, I decided to take a real chance, to stop thinking about making games and start building them. What began as curiosity turned into a full pursuit of learning how systems, design, and technology come together to create meaningful play.
 
+Now, I’m a Gameplay Engineer and Technical Game Designer focused on turning design intent into elegant, practical software architecture. I work primarily in C++ and Unreal Engine, building gameplay systems and features that are scalable, performant, and easy for teams to iterate on. My favorite problems are the ones where good engineering directly improves player enjoyment and speeds up developer iteration.
 
-## You can try the Demo here -> [DEMO](https://drive.google.com/drive/folders/1hJQrmnM6F_LmO74WHoozdmP9ByduKGBU?usp=drive_link)
+Day to day, I design mechanics and systems, prototype and iterate in engine, gather user feedback, and do tuning & balancing to tighten the feel. I collaborate in cross-disciplinary, agile teams and keep my process feedback-oriented. I love clear docs, small testable slices, and steady improvements that ship.
 
----
+Big picture, I care about connecting people through technology. Beyond my current game work, I’m exploring a long-term vision called The Shire (LOTR superfan) a shared hub that links identity, social systems, and game experiences into one cohesive ecosystem.
 
-## 🎮 Game Overview
-- **Genre:** Tower Defense + Action Combat
-- **Engine:** Unreal Engine 5.4 (C++) (Updated to 5.6)
-- **Team Size:** Solo Developer
-- **Game Website:** [www.paracosm.gg](https://www.paracosm.gg)
-- **Steam:** [Steam Page](https://store.steampowered.com/app/3704770/Die_Robot/)
-- **Github:** [Github Repo](https://github.com/unrealrobin/timbermvp)
+Always learning, always improving and always building systems that make play feel great.
+
+# Works
+
+## [Die Robot](./DieRobot.md) <- click for more
 
 ![Gameplay Screenshot](./Portfolio/Images/GameplayScreenshot.png)
 
----
+Summary:
+Die Robot is a 3rd Person Action Tower Defense game built in Unreal Engine 5. Players build mazes lined with traps and tech in order to stop an invading swarm of robots, the Carbonites, from taking the Data Seed. Set within the lab of robot mogul Dr. Cyrus Vexler, Kip, a recently booted up robot uses trap, tech, and combat to resist the swarm and protected the Data Seed.
 
-##  Featured Systems
+Systems
+1. Mission Delivery System.
+2. Custom Build system.
+3. Trap Synergy System.
+4. And much much more...
 
-### [Mission System](./Portfolio/MissionDeliverySystem.md)
-A modular, data-driven quest framework, using the MVVM-C Pattern.
-- Actor Component based manager.
-- GameplayTags for event filtering & easy mission iteration.
-- Uses Unreal Engine's MVVM View Model Pattern.'
+## [Project Hail Mary](./Portfolio/AbilityTelegrpahEditor.md) <- click for more
 
----
+![Gameplay Screenshot](./Portfolio\Images\PHM_RATE.jpg)
 
-### [Player Ability System](./Portfolio/PlayerCombatSystem.md)
-A flexible weapon component that drives combat abilities..
-- Energy-driven alt-fires and knockback.
-- Encapsulated UObject based abilities.
-- Scalable design for adding new ability types.
+Summary:
+Project Hail Mary is project where I explore more niche game developer roles and dive deeper into the most advanced systems UE has to offer. Though not tied to a specific game, these smaller projects have pushed me to explore more specific roles that game developers hold.
 
----
-
-### [Build System](./Portfolio/BuildSystem.md)
-Logic for placing, validating, and managing traps & structures.
-- Placement rules (collision, grid, NavMesh integration).
-- Dynamic Traps with Synergistic Effects. (fire + gas → explosion).
-- Save & Load via GUID's and persistant parent-child relationships (Walls & Traps).
-
----
-
-## Other Systems
- - Custom AI behavior and pathfinding.
- - Trap Synergy System.
-
-
-##  About Me
-I’m a gameplay programmer passionate about **system design and combat mechanics**.  
-Looking for **gameplay engineering & technical design roles** in Unreal Engine projects.
-
-- [LinkedIn](https://linkedin.com/in/robinlifshitz)
-- [GitHub Repo](https://github.com/unrealrobin/timbermvp)
-
----
+Systems
+1. Gameplay Ability System
+2. Networked Game Play
+3. Runtime Ability Telegraph Editor
+4. And more to come...
 
