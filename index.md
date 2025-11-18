@@ -20,7 +20,7 @@ Always learning, always improving and always building systems that make play fee
 
 # Works
 
-## [Die Robot | Game Design & Engineering](./DieRobot.md) <- click for more
+## [Die Robot | Game Design & Engineering](./Portfolio/DieRobot.md) <- click for more
 
 ![Gameplay Screenshot](./Portfolio/Images/GameplayScreenshot.png)
 
