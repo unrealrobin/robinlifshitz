@@ -20,7 +20,7 @@ Always learning, always improving and always building systems that make play fee
 
 # Works
 
-## [Die Robot](./DieRobot.md) <- click for more
+## [Die Robot | Game Design & Engineering](./DieRobot.md) <- click for more
 
 ![Gameplay Screenshot](./Portfolio/Images/GameplayScreenshot.png)
 
@@ -33,7 +33,9 @@ Systems
 3. Trap Synergy System.
 4. And much much more...
 
-## [Project Hail Mary](./Portfolio/AbilityTelegraphEditor.md) <- click for more
+[View Full Repo on GitHub](https://github.com/unrealrobin/timbermvp)
+
+## [Project Hail Mary | Technical Design](./Portfolio/AbilityTelegraphEditor.md) <- click for more
 
 ![Gameplay Screenshot](./Portfolio\Images\PHM_RATE.jpg)
 
@@ -45,4 +47,13 @@ Systems
 2. Networked Game Play
 3. Runtime Ability Telegraph Editor
 4. And more to come...
+
+
+[View Full Repo on GitHub](https://github.com/unrealrobin/ProjectHailMary)
+
+#
+
+**Email:** robin@paracosm.gg
+**LinkedIn:** [https://www.linkedin.com/in/robinlifshitz/](https://www.linkedin.com/in/robinlifshitz/)
+**Location:** Los Angeles, Ca
 
