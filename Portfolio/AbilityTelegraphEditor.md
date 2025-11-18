@@ -26,9 +26,9 @@
 
 ## In Game Screenshots
 
-![Gameplay Screenshot](./Images\PHM_RATE2.png)
+![Gameplay Screenshot](./Images/PHM_RATE2.png)
 
-![Gameplay Screenshot](./Images\PHM_RATE.jpg)
+![Gameplay Screenshot](./Images/PHM_RATE.jpg)
 
 - Works in networked environments so multiple designers can iterate together.
 - Ties in cleanly with the popular Gameplay Ability System.
