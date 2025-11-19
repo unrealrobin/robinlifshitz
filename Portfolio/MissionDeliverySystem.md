@@ -1,21 +1,24 @@
 ﻿# Mission System
 
 ## Goals
-1. Simplicity.
-- Extendable to other systems. (Ex. Achievements, Tutorials)
-- Mission Design should be as simple as possible & require low/no code.
-2. Dynamic
-- Mission Lists can be changed at runtime.
-3. Lightweight.
-- Avoid a bloated system tightly couples across the codebase.
+
+* Simplicity.
+    * Extendable to other systems. (Ex. Achievements, Tutorials)
+    * Mission Design should be as simple as possible & require low/no code.
+* Dynamic
+    * Mission Lists can be changed at runtime.
+* Lightweight.
+    * Avoid a bloated system tightly couples across the codebase.
 
 ## Why this works
+
 The MVVM-C (Model–View–ViewModel–Component) pattern enables data sharing between gameplay and UI without the UI knowing about gameplay implementation.  
 Multiple UI components can bind to the same ViewModel without needing to know how or when data is updated. The ViewModel is the single source of truth for all bound Views.  
 For example, multiple UI views can present the same mission data differently and all update automatically when the ViewModel changes.  
 A single subsystem that broadcasts events with a payload reduces coupling between systems.
 
 ## In Game Screenshot
+
 ![Mission System Screenshot](Images/MissionDisplayWithRewards.png)
 
 ## Code Map
@@ -31,39 +34,50 @@ A single subsystem that broadcasts events with a payload reduces coupling betwee
 |`UMissionDisplayWidget` (View/UI)        |Displays Data / Handles Animations and Visuals            | ** Functions in Blueprint **                                                                                           | [H](https://github.com/unrealrobin/timbermvp/blob/main/Source/timbermvp/Public/UI/MissionSystem/MissionDisplayWidget.h)                                                                                                                                                            |
 
 ## Key Features
+
 1. Event-driven mission system.
 2. Easy mission authoring in-editor via Data Assets.
 3. Gameplay Tags used for mission design and event filtering.
 4. ViewModel data can be reused outside the mission UI.
 5. Low coupling by interacting through the ViewModel and event subsystems.
 
-# Mission System Architecture
+## Mission System Architecture
+
 ### Pattern Overview
+
 ![Pattern Overview](Images/Pattern.png)
+
 The MVVM-C pattern (Model–View–ViewModel–Component) is a simple, unidirectional data-binding approach. 
 Multiple gameplay systems can reference the Mission Event Subsystem and call its broadcast function to send events to the Mission Delivery Component (MDC). 
 The MDC validates each event’s context and pushes updates to the ViewModel. The ViewModel then structures mission data for the UI. 
 Any number of UI widgets can bind to the ViewModel and automatically receive the latest mission data.
 
 ### Mission Delivery System Initialization
+
 ![Initialization](Images/Initialization.png)
+
 The mission Actor Component binds to the relevant subsystems on startup. 
 When a new mission is set, it populates the ViewModel with fresh mission data (for example: title, description, objectives, and rewards) so the UI can present the current mission state immediately.
 
-
 ### Example Damage Event Pipeline
+
 ![Damage Event Pipeline](Images/DamageEventPipeline.png)
+
 As an example, consider a mission to deal X damage to enemies. When an enemy takes damage, a mission event payload is created and sent to the Mission Event Subsystem. 
 The subsystem broadcasts the event to the MDC, which validates the payload using context Gameplay Tags. If the context is valid, the MDC updates progress, checks for completion, and then forwards the latest state to the ViewModel. 
 The ViewModel structures the data for easy UI consumption, and the UI updates automatically via MVVM bindings.
 
-
-
 ### Save/Load Mission State
+
 ![Save and Load](Images/SaveLoad.png)
+
 Completed missions are tracked and saved using mission GUIDs. On save, the MDC’s completed mission list is persisted. 
 On load, the MDC repopulates its completed missions from those GUIDs to restore the player’s mission progress.
 
+[View Full Repo on GitHub](https://github.com/unrealrobin/timbermvp)
 
-## 🔗 Links
-- [View Full Repo on GitHub](https://github.com/unrealrobin/timbermvp)
+---
+
+**Email:** robin@paracosm.gg
+**LinkedIn:** [https://www.linkedin.com/in/robinlifshitz/](https://www.linkedin.com/in/robinlifshitz/)
+**Location:** Los Angeles, Ca

@@ -1,4 +1,3 @@
-# Robin Lifshitz | Game Development Portfolio
 
 ### Info
 

@@ -1,6 +1,7 @@
 ﻿# Build System
 
 ## Goals
+
 1. Snap Walls and Floors Together.
 2. Snap Components to Walls and Floors.
 3. Snap Traps to Walls and Floors.
@@ -9,25 +10,28 @@
 6. Provide clear visual feedback for invalid placement.
 
 ## Why this works
+
 1. There is substantial logic required to make different buildable types snap together. Consolidating this in a single Actor Component improves separation of concerns.
 2. The controller only dispatches input events, while the Build System Manager performs the build logic.
 3. The HUD, Build Menu Panel, and build icons provide a clear, consistent way for the player to interact with the system.
 
-
 ## In Game Screenshots
 
 ### Build Menu
+
 ![Build Menu Screenshot](./Images/BuildMenuUI.png)
 
 ### Build Placement
+
 ![Building Screenshot](./Images/BuildingScreenshot.png)
 
 ### Invalid Build Placement
+
 ![Incorrect Placement Screenshot](./Images/InvalidPlacementScreenshot.png)
 
 ---
 
-##  Code Map
+## Code Map
 
 <!-- blank line above! -->
 
@@ -42,18 +46,15 @@
 
 ---
 
-##  Key Features
+## Key Features
+
 - Walls and floors snap together via a quadrant and snap-point system.
 - Traps and constructs attach to designated slots on structures.
 - Save/Load of placed buildables using GUIDs and durable parent–child relationships.
 - Grid, collision, and NavMesh-aware placement validation with clear visual feedback.
 
----
-
-
-# Architecture
-
 ## Sequence Diagram
+
 ![Build System Sequence Diagram](./Images/BuildSystemSequence.png)
 
 The build system includes multiple components needed to generate a build in game. The player enters build mode, selects a buildable from the build menu, spawns the proxy,
@@ -61,5 +62,10 @@ which is simply a representation of the buildable, and then if possible, spawns 
 at the games initialization using Data Assets for each buildable type. The Data Assets comprise all the information about buildable cost and name
 and are stored in their respective icons in the build menu.
 
-## 🔗 Links
-- [View Full Repo on GitHub](https://github.com/unrealrobin/timbermvp)
+[View Full Repo on GitHub](https://github.com/unrealrobin/timbermvp)
+
+---
+
+**Email:** robin@paracosm.gg
+**LinkedIn:** [https://www.linkedin.com/in/robinlifshitz/](https://www.linkedin.com/in/robinlifshitz/)
+**Location:** Los Angeles, Ca
