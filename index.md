@@ -34,9 +34,9 @@ Systems
 
 [View Full Repo on GitHub](https://github.com/unrealrobin/timbermvp)
 
-## [Project Hail Mary | Technical Design](./Portfolio/AbilityTelegraphEditor.md) <- click for more
+## [Project Hail Mary | Technical Design](./Portfolio/EUW_AbilityTelegraphEditor.md) <- click for more
 
-![Gameplay Screenshot](./Portfolio\Images\PHM_RATE.jpg)
+![Gameplay Screenshot](./Portfolio\Images\EUW_AbilityTelegraphEditor.png)
 
 Summary:
 Project Hail Mary is project where I explore more niche game developer roles and dive deeper into the most advanced systems UE has to offer. Though not tied to a specific game, these smaller projects have pushed me to explore more specific roles that game developers hold.
@@ -47,12 +47,8 @@ Systems
 3. Runtime Ability Telegraph Editor
 4. And more to come...
 
-
 [View Full Repo on GitHub](https://github.com/unrealrobin/ProjectHailMary)
-
-#
 
 **Email:** robin@paracosm.gg
 **LinkedIn:** [https://www.linkedin.com/in/robinlifshitz/](https://www.linkedin.com/in/robinlifshitz/)
 **Location:** Los Angeles, Ca
-
